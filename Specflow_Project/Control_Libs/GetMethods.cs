@@ -11,7 +11,7 @@ namespace Specflow_Project.Control_Libs
     class GetMethods
     {
 
-        //Enter Text
+        //Get Text
         public static string GetText(IWebElement element, string value)
         {
             return element.GetAttribute(value);
@@ -22,6 +22,8 @@ namespace Specflow_Project.Control_Libs
         {
             return new SelectElement(element).AllSelectedOptions.SingleOrDefault().Text;
         }
+
+        
 
     }
 }

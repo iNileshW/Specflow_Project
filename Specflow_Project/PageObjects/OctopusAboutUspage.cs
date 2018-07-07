@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using Specflow_Project.Control_Libs;
 namespace Specflow_Project.PageObjects
@@ -22,7 +17,7 @@ namespace Specflow_Project.PageObjects
         //Methods for page:
 
         //Search Name in text box Display Ascending
-        public OctopusPeoplePage OpenAboutUs()
+        public OctopusPeoplePage OpenPeoplePage()
         {
             SetMethods.Click(lnkPeople);
             return new OctopusPeoplePage();

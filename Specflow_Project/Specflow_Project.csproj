@@ -113,26 +113,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations\PropertiesCollection.cs" />
-    <Compile Include="Control Libs\GetMethods.cs" />
-    <Compile Include="Control Libs\SetMethods.cs" />
+    <Compile Include="Control_Libs\GetMethods.cs" />
+    <Compile Include="Control_Libs\SetMethods.cs" />
     <Compile Include="PageObjects\OctopusAboutUspage.cs" />
     <Compile Include="PageObjects\OctopusHomepage.cs" />
     <Compile Include="PageObjects\OctopusPeoplePage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Feature\SpecFlowFeature.feature.cs">
+    <Compile Include="Feature\SpecFlow.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature.feature</DependentUpon>
+      <DependentUpon>SpecFlow.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefinition1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Feature\SpecFlowFeature.feature">
+    <None Include="Feature\SpecFlow.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature.feature.cs</LastGenOutput>
+      <LastGenOutput>SpecFlow.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -87,11 +87,6 @@ namespace Specflow_Project.PageObjects
         [FindsBy(How = How.ClassName, Using = "row")]
         public IWebElement lnkmakingconnection { get; set; }
         
-
-        //Website Search Textbox
-        [FindsBy(How = How.Name, Using = "s")]
-        public IWebElement txtwebsearch { get; set; }
-
         //person name search textbox
         [FindsBy(How = How.Name, Using = "search")]
             public IWebElement txtsearch { get; set; }
@@ -230,6 +225,12 @@ namespace Specflow_Project.PageObjects
             SetMethods.EnterText(txtsearch, pName);
             SetMethods.Selectddl(ddlnamesort, "Sort Z-A");
             SetMethods.Click(imgsearch);
+        }
+
+        public string pageTitle(IWebDriver driver)
+        {
+            string Title = driver.Title;
+            return Title;
         }
     }
 }
